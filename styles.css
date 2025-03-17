@@ -1,152 +1,149 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    /* variaveis com elas podemos mudar funcões e  cores  */
-    --bg-color: #EDF2FF;
-    --text-color: #00082F;
-    --primary-color: #4263EB;
-    --primary-color-dark: #364FC7;
-
+  /* variaveis com elas podemos mudar funcões e  cores  */
+  --bg-color: #edf2ff;
+  --text-color: #00082f;
+  --primary-color: #4263eb;
+  --primary-color-dark: #364fc7;
 }
 
 body {
-    --bg-color: #EDF2FF;
-    --text-color: #00082F;
+  --bg-color: #edf2ff;
+  --text-color: #00082f;
 }
 
 body.dark-blue {
-    --bg-color: #00082F;
-    --text-color:#FFFFFF ;
+  --bg-color: #00082f;
+  --text-color: #ffffff;
 }
 
 body.pink {
-    --bg-color: #FFF0F6;
-    --text-color: #1F000B;
-    --primary-color: #D6336C;
-    --primary-color-dark: #A61E4D;
+  --bg-color: #fff0f6;
+  --text-color: #1f000b;
+  --primary-color: #d6336c;
+  --primary-color-dark: #a61e4d;
 }
 
 body.dark-pink {
-    --bg-color: #1F000B;
-    --text-color: #FFFFFF;
-    --primary-color: #D6336C;
-    --primary-color-dark: #A61E4D;
+  --bg-color: #1f000b;
+  --text-color: #ffffff;
+  --primary-color: #d6336c;
+  --primary-color-dark: #a61e4d;
 }
 
 body.green {
-    --bg-color: #3b6e37;
-    --text-color: #FFFFFF;
-    --primary-color: #d8db21;
-    --primary-color-dark: #584a08;
+  --bg-color: #3b6e37;
+  --text-color: #ffffff;
+  --primary-color: #d8db21;
+  --primary-color-dark: #584a08;
 }
 
 body.green-dark {
-    --bg-color: #FFFFFF;
-    --text-color: #1F000B;
-    --primary-color: #3b6e37;
-    --primary-color-dark: #D8DB21;
+  --bg-color: #ffffff;
+  --text-color: #1f000b;
+  --primary-color: #3b6e37;
+  --primary-color-dark: #d8db21;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    background:var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Roboto', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
 }
 .container {
-    text-align: center;
-    width: 300px;    /* largura do trabalho  */
-    margin: 60px auto ;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
 }
 img {
-    width: 100%;     /* 100% do tamanho da largura */
+  width: 100%; /* 100% do tamanho da largura */
 }
 
 img.avatar {
-    border-radius: 150px;
-    width: 100px;
-    height: 100px;
-    padding: 3.7px;
-    border: var(--primary-color) solid 4px;
+  border-radius: 150px;
+  width: 100px;
+  height: 100px;
+  padding: 3.7px;
+  border: var(--primary-color) solid 4px;
 }
 
 h1 {
-    margin-top: 24px;
-    margin-bottom: 8px;
-    font-size: 32px;
-    margin-bottom: 8px;
+  margin: 24px 0px 8px 0px;
+  font-size: 32px;
+  margin-bottom: 8px;
 }
- .username {
-    font-family: 'Roboto Mono', monospace;
-    opacity: 0.8;
-    font-size: 18px;
- }
+.username {
+  font-family: "Roboto Mono", monospace;
+  opacity: 0.8;
+  font-size: 18px;
+}
 
 ul {
-    list-style: none;
-    margin: 48px 0;
+  list-style: none;
+  margin: 48px 0px;
 }
 
-
 ul li a {
-    height: 53px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary-color);
-    color: white;
-    text-transform: uppercase;
-    font-size: 18px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
 
-    margin-bottom: 16px;
-    border-radius: 6px;
-    transition: background 0.4s;
-} 
+  margin-bottom: 16px;
+  border-radius: 6px;
+  transition: 0.4s;
+}
 
 ul li a:hover {
-    background: var(--primary-color-dark);
+  background: var(--primary-color-dark);
 }
 
 footer {
-    font-weight: 500;
-    font-size: 12px;
-    opacity: 0.6;
-    transition: 0,4s;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+  transition: 0, 4s;
 }
 
 footer:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
-@media (max-width:1100px) {
-    body {
-        background: #584a08;
-    }    
+@media (max-width: 1100px) {
+  body {
+    background: #584a08;
+  }
 }
 
-@media (max-width:440px) {
-    body {
-        background: rgb(235, 194, 120);
-    }
-    
+@media (max-width: 440px) {
+  body {
+    background: rgb(235, 194, 120);
+  }
 }
 
-@media (max-width:440px) {
-    ul li a {
-        color: #00082F;
-    }  
-    h1, p, footer {
-        color: #00082F;
-
-    }  
+@media (max-width: 440px) {
+  ul li a {
+    color: #00082f;
+  }
+  h1,
+  p,
+  footer {
+    color: #00082f;
+  }
 }
- 
-
